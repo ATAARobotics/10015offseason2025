@@ -8,10 +8,10 @@ To use it on a local copy of Android Studio:
 - start Android Studio
 - if it opens up a project, select "File -> Close Project"
 - you should now see a "Welcome to Android Studio" dialog
-- click the "Get from VCS" button
+- click the "Clone Repository" (or "Get from VCS") button
 - on the left of the dialog that comes up, click "GitHub (no accounts)"
 - click "Log In via GitHub"
-- your Web browser should launch, click "Authorize Github" and then "Authorize JetBrains"
+- your Web browser should launch, click "Authorize Github" (or "Authorize JetBrains")
 - you can now search for "10015offseason2025" in the list, and there should be one repository
   (If this one is not found, send your GitHub username to one of the mentors on Slack you may not have access yet)
 - click "Clone"
@@ -24,7 +24,7 @@ Under "TeamCode" you can keep navigating to "TeleOp.java":
 
 - ``TeamCode/src/main/java/org/firstinspires/ftc/teamcode/TeleOp.java``
 
-This ``TeleOp.java`` origainlly comes from one of the examples (all the
+This ``TeleOp.java`` originally comes from one of the examples (all the
 examples are under the directory:
 
 - ``FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/``
@@ -37,7 +37,7 @@ do much, but will show "Hello, world!" in the telemetry.
 Writing a "Hello, world!" program is a classic first step.
 
 Once this all works and you're comfortable pushing code to the robot
-and runnnig it, replace the comments with real code.
+and running it, replace the comments with real code.
 
 I have already installed FTCLib and FTCDashboard for use.
 
