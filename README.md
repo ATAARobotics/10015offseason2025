@@ -73,3 +73,7 @@ There will be a warning about "unattached", that's fine.
 
 7. Install FTCLib, FTCDashboard, ...
 
+## Pedro Pathing
+
+Follow the steps on their [website](https://pedropathing.com/) to tune and setup!  
+
