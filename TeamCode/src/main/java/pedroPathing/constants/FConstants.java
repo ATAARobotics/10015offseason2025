@@ -32,7 +32,7 @@ public class FConstants {
         FollowerConstants.headingPIDFCoefficients.setCoefficients(1.5,0,0.1,0);
         FollowerConstants.drivePIDFCoefficients.setCoefficients(0.01,0,0,0.6,0);
 
-        FollowerConstants.zeroPowerAccelerationMultiplier = 2;
+        FollowerConstants.zeroPowerAccelerationMultiplier = 4;
         FollowerConstants.centripetalScaling = 0.0005;
 
         FollowerConstants.pathEndTimeoutConstraint = 500;
