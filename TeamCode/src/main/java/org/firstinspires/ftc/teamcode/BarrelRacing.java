@@ -55,34 +55,28 @@ public class BarrelRacing extends OpMode {
         PathChain raceTrack = follower.pathBuilder()
                 // First barrel
                 .addPath(new BezierLine(new Point(startPose),new Point(barrel1.getX(),barrel1.getY()+RADIUS)))
-                .setConstantHeadingInterpolation(Math.toRadians(180))
                 .addPath(new BezierCurve(new Point(barrel1.getX(),barrel1.getY()+RADIUS),
                         new Point(barrel1.getX()-RADIUS-3, barrel1.getY()+RADIUS-2),
                         new Point(barrel1.getX()-RADIUS, barrel1.getY()-RADIUS),
                         new Point(barrel1.getX(), barrel1.getY()-RADIUS)))
-                .setConstantHeadingInterpolation(Math.toRadians(180))
                 // Second barrel
                 .addPath(new BezierCurve(new Point(barrel1.getX(), barrel1.getY()-RADIUS),
                         new Point(barrel1.getX()+RADIUS+40, barrel1.getY()),
                         new Point(barrel2.getX()-RADIUS-40, barrel2.getY()),
                         new Point(barrel2.getX()-20, barrel2.getY()+RADIUS+2)))
-                .setConstantHeadingInterpolation(Math.toRadians(180))
                 .addPath(new BezierCurve(new Point(barrel2.getX()-20, barrel2.getY()+RADIUS+2),
                         new Point(barrel2.getX()+RADIUS, barrel2.getY()+RADIUS),
                         new Point(barrel2.getX()+RADIUS+4, barrel2.getY()-6),
                         new Point(barrel2.getX(), barrel2.getY()-RADIUS-1)))
-                .setConstantHeadingInterpolation(Math.toRadians(180))
                 // Third barrel & park
                 .addPath(new BezierCurve(new Point(barrel2.getX(), barrel2.getY()-RADIUS-1),
                         new Point(barrel3.getX()+RADIUS-5, barrel3.getY()-RADIUS-30),
                         new Point(barrel3.getX()-RADIUS+5, barrel3.getY()-RADIUS-2),
                         new Point(barrel3.getX()-RADIUS+5, barrel3.getY())))
-                .setConstantHeadingInterpolation(Math.toRadians(180))
                 .addPath(new BezierCurve(new Point(barrel3.getX()-RADIUS+5, barrel3.getY()),
                         new Point(barrel3.getX()-RADIUS+5, barrel3.getY()+RADIUS+4),
                         new Point(barrel3.getX()+2, barrel3.getY()+RADIUS-20),
                         new Point(startPose.getX(), startPose.getY())))
-                .setConstantHeadingInterpolation(Math.toRadians(180))
                 .build();
         follower.followPath(raceTrack,1.0,false);
         telemetryA = new MultipleTelemetry(this.telemetry, FtcDashboard.getInstance().getTelemetry());
